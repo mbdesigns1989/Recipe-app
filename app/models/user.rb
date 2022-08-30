@@ -6,5 +6,5 @@ class User < ApplicationRecord
   has_many :foods, foreign_key: :users_id, class_name: 'Food', dependent: :delete_all
 
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+         :recoverable, :rememberable, :validatable 
 end
