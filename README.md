@@ -7,7 +7,7 @@ Built With
 
 * Ruby
 * Ruby on Rails
-
+* Postgres
 
 Things you may want to cover:
 
