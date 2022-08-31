@@ -1,21 +1,26 @@
+  <h2 class= 'shoppin-list'>Shopping List</h2>
 <div class="d-flex flex-column mb-2 align-items-center">
-  <h1>Total Items: <%= @total_items %></h1>
-  <h1>Total Price: $<%= @total_price %></h1>
+
+   <div class= "food-total">
+   <p>Amount of food items to by: <%= @foods.length %></p>
+    <p>Total value of food needed:$ <%= @quantity %></p>
+  </div>
   <table class="table">
     <thead>
       <tr>
         <th scope="col">Food</th>
         <th scope="col">Quantity</th>
-        <th scope="col">Value</th>
+        <th scope="col">Price</th>
       </tr>
     </thead>
     <tbody>
-    <% @recipe_food.each do |food|%>
-    <tr>
-      <td> <%= food.food.name %></td>
-      <td><%= food.quantity %> <%= food.food.measurement_unit %></td>
-      <td><%= food.food.price * food.quantity %></td>
-    </tr>
-    <% end %>
+    <% @foods.each do |food| %>
+          <tr>
+            <% quantity = RecipeFood.joins(:food).where(food_id: food.id).sum( 'quantity') %>
+            <td><%= food.name %></td>
+              <td><%= quantity %></td>
+            <td>$<%= (food.price * quantity) %></td>
+          </tr>
+        <%end%>
   </table>
 </div>
