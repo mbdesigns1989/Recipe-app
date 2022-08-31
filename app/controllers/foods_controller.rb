@@ -22,7 +22,7 @@ class FoodsController < ApplicationController
   def create
     @user = current_user
     @food = Food.new(food_params)
-    @food.users = @user
+    @food.user = @user
 
     respond_to do |format|
       if @food.save

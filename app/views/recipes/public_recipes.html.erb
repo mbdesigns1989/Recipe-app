@@ -3,6 +3,6 @@
   <% if @recipes.empty? %>
     <p class="text-center text-warning">No public recipes.</p>
   <% else %>
-    <%= render partial: "shared/public_recipe", collection: @recipes.includes([:users]) %>
+    <%= render partial: "shared/public_recipe", collection: @recipes.includes([:user]) %>
   <% end %>
 </div>
