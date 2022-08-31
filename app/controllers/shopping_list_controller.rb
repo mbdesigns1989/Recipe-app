@@ -1,5 +1,5 @@
 class ShoppingListController < ApplicationController
-   def show
+  def show
     @user = current_user
     @foods = @user.foods
     @recipes = Recipe.where(user_id: current_user)
