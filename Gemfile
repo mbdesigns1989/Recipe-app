@@ -11,6 +11,7 @@ gem 'devise'
 gem 'bootstrap', '~> 5.0'
 gem 'bootstrap_form', '~> 5.0'
 
+gem 'sassc', '~> 2.1.0'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.3'
 
