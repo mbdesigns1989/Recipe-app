@@ -1,8 +1,8 @@
-<% @recipes.includes([:users]).each do |recipe| %>
+<% @recipes.includes([:user]).each do |recipe| %>
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title"><%= recipe.name %></h5>
-    <p class="card-text"> By: <%= recipe.users.name %></p>
+    <p class="card-text"> By: <%= recipe.user.name %></p>
     <% if recipe.public %>
     <span class="badge bg-secondary">Public</span>
     <% else %>
