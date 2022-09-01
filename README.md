@@ -52,7 +52,7 @@ This README documents steps necessary to get the application up and running.
 <!-- * Deployment instructions -->
 ## Authors
 
-👤 **Mandela Tumukunde**
+👤 **Mohamed Badr**
 
 - GitHub: [@mbdesign](https://github.com/mbdesigns1989 )
 - LinkedIn: [@mohamed-badr](https://www.linkedin.com/in/mohamed-badr-mb/)
