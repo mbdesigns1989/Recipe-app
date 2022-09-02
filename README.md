@@ -4,6 +4,7 @@
 
 ###  The Recipe app keeps track of all your recipes, ingredients, and inventory. 
 
+[livelink](https://lit-crag-70167.herokuapp.com)
 
 This README documents steps necessary to get the application up and running.
 
